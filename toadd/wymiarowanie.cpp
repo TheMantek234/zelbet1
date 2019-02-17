@@ -8,6 +8,18 @@ using namespace std;
 int main() {
 	double As1=0.0, As2 = 0.0, xeff = 0.0, a2 = 0.0, h =0.0;
 	double Ned = 0.0, e1 = 0.0, e2 = 0.0, fcd, b, xefflim, d, Asmin, fyd, a2, sefflim;
+	bool min = false;
+	
+	As2 = (Ned*e1 - fcd * 1000 * b*xefflim*(d - 0.5*xefflim)) / (fyd * 1000 * (d - a2));
+	if (As2 < 2.26*0.0001)
+	{
+		As2 = 2.26*0.0001;
+		/*ZBROJENIE MINIMALNE */
+		min = true;
+	}
+	
+	xeff = d - sqrt(d*d - (2 * (Ned*e1 - fyd * 1000 * As2*(d - a2))) / (fcd * 1000 * b));
+
 	if (xeff <= 2 * a2)
 	{
 		As1 = (abs(Ned*e2)) / (fyd*(d - a2)); /*PRZYPADEK C1*/
