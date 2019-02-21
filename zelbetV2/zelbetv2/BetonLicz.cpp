@@ -31,15 +31,12 @@ void BetonLicz::PelzLicz()
 	Ic = b * h*h*h / 12;
 	i = sqrt(Ic / Ac);
 	lamb = l0 / i;
-	A, B, C, n;
-	A = 1.0 / (1.0 + 0.2*fef);
+    A = 1.0 / (1.0 + 0.2*fef);
 	B = 1.1;
 	C = 0.7;
 	n = Ned / (fcd * 1000.0 * Ac);
 	lamblim = 20.0 * A*B*C / sqrt(n);
-	e0 = 0.0, ei = 0.0, eta = 1.0, rob, etot;
-	k1 = 0, k2 = 0, Kc = 0, Is = 0, EI = 0, NB = 0;
-	e0 = M0ed / Ned;
+    e0 = M0ed / Ned;
 	bufor = std::max(l0 / 400.0, h / 30.0);
 	ei = std::max(bufor, 0.02);
 	smuklosc = (lamb > lamblim);

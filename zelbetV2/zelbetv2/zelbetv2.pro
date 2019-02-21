@@ -27,14 +27,17 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    BetonLicz.cpp
+    BetonLicz.cpp \
+    wyborpreta.cpp
 
 HEADERS += \
         mainwindow.h \
-    BetonLicz.h
+    BetonLicz.h \
+    wyborpreta.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    wyborpreta.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

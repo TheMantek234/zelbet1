@@ -200,7 +200,7 @@
      <string>Wysokość słupa:</string>
     </property>
    </widget>
-   <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+   <widget class="QDoubleSpinBox" name="wysslup">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -209,8 +209,14 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="value">
+     <double>5.000000000000000</double>
+    </property>
    </widget>
-   <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
+   <widget class="QDoubleSpinBox" name="beta">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -219,8 +225,14 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="value">
+     <double>1.800000000000000</double>
+    </property>
    </widget>
-   <widget class="QDoubleSpinBox" name="doubleSpinBox_4">
+   <widget class="QDoubleSpinBox" name="szerb">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -229,8 +241,14 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="value">
+     <double>0.300000000000000</double>
+    </property>
    </widget>
-   <widget class="QDoubleSpinBox" name="doubleSpinBox_5">
+   <widget class="QDoubleSpinBox" name="wysh">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -239,8 +257,14 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="value">
+     <double>0.500000000000000</double>
+    </property>
    </widget>
-   <widget class="QDoubleSpinBox" name="doubleSpinBox_6">
+   <widget class="QDoubleSpinBox" name="Ned">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -249,8 +273,17 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="maximum">
+     <double>2000105.989999999990687</double>
+    </property>
+    <property name="value">
+     <double>800.000000000000000</double>
+    </property>
    </widget>
-   <widget class="QDoubleSpinBox" name="doubleSpinBox_7">
+   <widget class="QDoubleSpinBox" name="M0ed">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -259,8 +292,17 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="maximum">
+     <double>2000000.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>265.000000000000000</double>
+    </property>
    </widget>
-   <widget class="QDoubleSpinBox" name="doubleSpinBox_8">
+   <widget class="QDoubleSpinBox" name="momzgi">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -269,8 +311,14 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="value">
+     <double>0.600000000000000</double>
+    </property>
    </widget>
-   <widget class="QDoubleSpinBox" name="doubleSpinBox_9">
+   <widget class="QDoubleSpinBox" name="wilgot">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -279,8 +327,17 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>50.000000000000000</double>
+    </property>
    </widget>
-   <widget class="QDoubleSpinBox" name="doubleSpinBox_10">
+   <widget class="QDoubleSpinBox" name="czasprzyl">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -288,6 +345,15 @@
       <width>62</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="maximum">
+     <double>360.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>60.000000000000000</double>
     </property>
    </widget>
    <widget class="QLabel" name="label_10">
@@ -431,23 +497,69 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>400</y>
-      <width>491</width>
-      <height>231</height>
+      <y>520</y>
+      <width>481</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>50</pointsize>
       <weight>75</weight>
-      <italic>true</italic>
+      <italic>false</italic>
       <bold>true</bold>
       <underline>false</underline>
       <strikeout>false</strikeout>
+      <stylestrategy>PreferAntialias</stylestrategy>
      </font>
     </property>
     <property name="text">
      <string>L I C Z</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="rob">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>410</y>
+      <width>62</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="locale">
+     <locale language="English" country="UnitedStates"/>
+    </property>
+    <property name="maximum">
+     <double>100.000000000000000</double>
+    </property>
+    <property name="value">
+     <double>2.180000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>410</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Podaj założony poziom zbrojenia</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>410</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>[%]</string>
     </property>
    </widget>
   </widget>
