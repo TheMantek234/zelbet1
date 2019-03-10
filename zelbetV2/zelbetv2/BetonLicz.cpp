@@ -94,8 +94,8 @@ void BetonLicz::wymiar()
 
 	if (xeff <= 2.0 * a2)
 	{
-		As1 = (abs(Ned*e2)) / (fyd*1000.0*(d - a2)); /*PRZYPADEK C1*/
-	}
+        As1 = (abs(Ned*e2)) / (fyd*1000.0*(d - a2)); /*PRZYPADEK C1*/
+    }
 	else
 	{
 		As1 = (-Ned + fcd * 1000.0 * b*xeff + fyd * 1000.0 * As2) / (fyd * 1000.0);
@@ -133,25 +133,7 @@ void BetonLicz::wymiar()
 	}
 }
 
-void BetonLicz::wyborpret1()
-{
-	if (min1 == false) {
-		n1req = (4.0 * As1) / (3.14*fi1*fi1);
-		n1prov = ceil(n1req);
-	}
-	else { n1prov = 2.0; fi1 = 0.012; }
-	As1 = (n1prov * 3.14*fi1*fi1) / 4.0;
-	}
-void BetonLicz::wyborpret2() 
-{
 
-	if (min2 == false) {
-		n2req = (4.0 * As2) / (3.14*fi2*fi2);
-		n2prov = ceil(n2req);
-	}
-	else { n2prov = 2.0; fi2 = 0.012; }
-	As2 = (n2prov * 3.14*fi2*fi2) / 4.0;
-}
 
 void BetonLicz::ostobliczenia()
 {

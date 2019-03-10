@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "wyborpreta.h"
 #include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -81,7 +82,12 @@ void MainWindow::on_pushButton_clicked()
     }
     Obliczonka->liczsmukly();
     Obliczonka->wtracenie();
+    ui->pushButton->setText(QString::number(Obliczonka->As1));
     Obliczonka->wymiar();
+
+    wyborpreta* zbrojenie=new wyborpreta(Obliczonka);
+    zbrojenie->show();
+
 
     freeze(true);
 }

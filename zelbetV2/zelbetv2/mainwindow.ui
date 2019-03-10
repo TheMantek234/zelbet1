@@ -334,7 +334,7 @@
      <double>100.000000000000000</double>
     </property>
     <property name="value">
-     <double>50.000000000000000</double>
+     <double>0.500000000000000</double>
     </property>
    </widget>
    <widget class="QDoubleSpinBox" name="czasprzyl">
@@ -529,11 +529,14 @@
     <property name="locale">
      <locale language="English" country="UnitedStates"/>
     </property>
+    <property name="decimals">
+     <number>4</number>
+    </property>
     <property name="maximum">
      <double>100.000000000000000</double>
     </property>
     <property name="value">
-     <double>2.180000000000000</double>
+     <double>0.021800000000000</double>
     </property>
    </widget>
    <widget class="QLabel" name="label_19">

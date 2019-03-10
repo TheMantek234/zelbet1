@@ -166,7 +166,7 @@ public:
         wilgot->setGeometry(QRect(380, 330, 62, 22));
         wilgot->setLocale(QLocale(QLocale::English, QLocale::UnitedStates));
         wilgot->setMaximum(100.000000000000000);
-        wilgot->setValue(50.000000000000000);
+        wilgot->setValue(0.500000000000000);
         czasprzyl = new QDoubleSpinBox(centralWidget);
         czasprzyl->setObjectName(QString::fromUtf8("czasprzyl"));
         czasprzyl->setGeometry(QRect(380, 370, 62, 22));
@@ -222,8 +222,9 @@ public:
         rob->setObjectName(QString::fromUtf8("rob"));
         rob->setGeometry(QRect(380, 410, 62, 22));
         rob->setLocale(QLocale(QLocale::English, QLocale::UnitedStates));
+        rob->setDecimals(4);
         rob->setMaximum(100.000000000000000);
-        rob->setValue(2.180000000000000);
+        rob->setValue(0.021800000000000);
         label_19 = new QLabel(centralWidget);
         label_19->setObjectName(QString::fromUtf8("label_19"));
         label_19->setGeometry(QRect(200, 410, 171, 16));

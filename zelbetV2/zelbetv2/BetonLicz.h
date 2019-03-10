@@ -36,8 +36,6 @@ public:
 	
 	/*WYMIAR WYBOR PRET*/
 	void wymiar();
-	void wyborpret1();
-	void wyborpret2();
 
 
 	/*ROZMIESZCZENIE PRETOW*/

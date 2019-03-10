@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QDoubleSpinBox" name="spinAs1">
+  <widget class="QDoubleSpinBox" name="d1">
    <property name="geometry">
     <rect>
      <x>190</x>
@@ -22,25 +22,17 @@
      <height>22</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QTextEdit" name="As1prov">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>120</y>
-     <width>61</width>
-     <height>31</height>
-    </rect>
+   <property name="locale">
+    <locale language="English" country="UnitedStates"/>
    </property>
-  </widget>
-  <widget class="QTextEdit" name="As1req">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>70</y>
-     <width>61</width>
-     <height>31</height>
-    </rect>
+   <property name="decimals">
+    <number>3</number>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.001000000000000</double>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -121,17 +113,7 @@
     <string>Zakładana srednica prętów As2</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="As2req">
-   <property name="geometry">
-    <rect>
-     <x>460</x>
-     <y>70</y>
-     <width>61</width>
-     <height>31</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QDoubleSpinBox" name="spinAs2">
+  <widget class="QDoubleSpinBox" name="d2">
    <property name="geometry">
     <rect>
      <x>510</x>
@@ -140,15 +122,17 @@
      <height>22</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QTextEdit" name="As2prov">
-   <property name="geometry">
-    <rect>
-     <x>460</x>
-     <y>120</y>
-     <width>61</width>
-     <height>31</height>
-    </rect>
+   <property name="locale">
+    <locale language="English" country="UnitedStates"/>
+   </property>
+   <property name="decimals">
+    <number>3</number>
+   </property>
+   <property name="maximum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.001000000000000</double>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
@@ -162,6 +146,9 @@
    </property>
    <property name="text">
     <string>Zaakceptuj</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -190,10 +177,13 @@
     <string>[m]</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_9">
+  <widget class="QLabel" name="As1min">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>50</x>
      <y>160</y>
      <width>181</width>
      <height>51</height>
@@ -201,6 +191,74 @@
    </property>
    <property name="text">
     <string>Zastosowano minimalne zbrojenie</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="As2min">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>160</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Zastosowano minimalne zbrojenie</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="As1req">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>60</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="As1prov">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>120</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="As2req">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>60</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="As2prov">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>120</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
    </property>
   </widget>
  </widget>
